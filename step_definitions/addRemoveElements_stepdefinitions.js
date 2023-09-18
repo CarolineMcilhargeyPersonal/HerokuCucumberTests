@@ -22,4 +22,15 @@ Given('I am on the add remove elements page', async () => {
     await expect(DeleteElement).toBeDisplayed();
   });
   
+  When('I select delete element', async () => {
+    addRemoveElementsPage.clickDeleteElementbutton
+});
+
+Then('I should see the element has been removed from the page', async () => {
+    expect(addRemoveElementsPage.DeleteElementbutton).not.toBeDisplayed()
+
+  });
+
+
+  
   

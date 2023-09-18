@@ -7,15 +7,21 @@ class addRemoveElementsPage extends Page {
      * define selectors using getter methods
      */
     get addElementbutton () {
-        const button = $('//button[text()="Add Element"]');
-        button.click();
+      return $('//button[text()="Add Element"]');
+    }
+
+    get DeleteElementbutton () {
+    return  $('//button[text()="Delete"]');
     }
 
     clickaddElementbutton() {
         this.addElementbutton.click();
       }
 
-
+      clickDeleteElementbutton() {
+        this.DeleteElementbutton.click();
+      }
+      
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password

@@ -22,8 +22,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        // './features/*.feature'
-        './features/addRemoveElements.feature'
+        './features/*.feature'
+        // './features/addRemoveElements.feature'
     ],
     // Patterns to exclude.
     exclude: [
